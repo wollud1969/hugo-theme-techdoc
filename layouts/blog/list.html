@@ -3,6 +3,8 @@
 {{- .Content -}}
 {{ range (.Paginate ( first 50 .Data.Pages )).Pages }}
 {{ .Render "summary"}}
+<p>
+</p>
 {{ end }}
 {{ template "_internal/pagination.html" . }}
 {{- end -}}
